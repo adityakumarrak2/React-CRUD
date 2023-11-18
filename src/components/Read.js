@@ -9,14 +9,14 @@ export const Read = () => {
 
   function getData() {
     setLoader(true);
-    axios.get("http://localhost:5000/api/v1/employee").then((res) => {
+    axios.get("https://bend-t68f.onrender.com/api/v1/employee").then((res) => {
       setData(res.data);
       setLoader(false);
     });
   }
 
   function handleDelete(id) {
-    axios.delete(`http://localhost:5000/api/v1/employee/${id}`).then(() => {
+    axios.delete(`https://bend-t68f.onrender.com/api/v1/employee/${id}`).then(() => {
       getData();
     });
   }

@@ -13,7 +13,7 @@ export const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/v1/employee", {
+      .post("https://bend-t68f.onrender.com/api/v1/employee", {
         ename: ename,
         email: email,
         emobile: emobile,
